@@ -1,0 +1,28 @@
+{
+  "name": "bnb-copy-trading-bot",
+  "version": "2.0.0",
+  "description": "Clean BNB Copy Trading Bot for four.meme DEX",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "pancakeswap": "tsx watch src/pancakeSwap/index.ts",
+    "fourmeme": "tsx watch src/fourmeme/index.ts",
+    "test": "tsx watch src/test.ts"
+  },
+  "keywords": ["bnb", "copy-trading", "four.meme", "dex", "typescript"],
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^6.9.0",
+    "dotenv": "^16.3.1",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
+
