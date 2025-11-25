@@ -1,27 +1,30 @@
 {
-  "name": "bnb-copy-trading-bot",
-  "version": "2.0.0",
-  "description": "Clean BNB Copy Trading Bot for four.meme DEX",
-  "main": "dist/index.js",
-  "type": "module",
+  "name": "solana-perpetual-dex-smart-contract",
+  "version": "0.1.0",
+  "description": "Perpetual DEX with Orderbook, Margin Trading, and Leverage on Solana",
+  "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "npm run build && node dist/index.js",
-    "dev": "tsx watch src/index.ts",
-    "pancakeswap": "tsx watch src/pancakeSwap/index.ts",
-    "fourmeme": "tsx watch src/fourmeme/index.ts",
-    "test": "tsx watch src/test.ts"
+    "test": "anchor test",
+    "build": "anchor build",
+    "deploy": "anchor deploy"
   },
-  "keywords": ["bnb", "copy-trading", "four.meme", "dex", "typescript"],
+  "keywords": [
+    "solana",
+    "perpetual",
+    "dex",
+    "futures",
+    "margin-trading",
+    "leverage",
+    "orderbook",
+    "blockchain",
+    "anchor"
+  ],
+  "author": "",
   "license": "MIT",
-  "dependencies": {
-    "ethers": "^6.9.0",
-    "dotenv": "^16.3.1",
-    "winston": "^3.11.0"
-  },
   "devDependencies": {
-    "@types/node": "^20.10.5",
-    "tsx": "^4.7.0",
+    "@coral-xyz/anchor": "^0.30.1",
+    "@solana/web3.js": "^1.87.6",
+    "@types/node": "^20.10.0",
     "typescript": "^5.3.3"
   }
 }
