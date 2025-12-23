@@ -309,7 +309,7 @@ Updates the market price (oracle).
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/cutupdev/Solana-Perpetual-Dex-Smart-Contract.git
 cd Solana-Perpetual-Dex-Smart-Contract
 ```
 
